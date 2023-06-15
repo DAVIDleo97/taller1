@@ -7,20 +7,20 @@ import Game from "../Screens/Game";
 
 const Stack = createStackNavigator();
 
-function MyStack(){
-    return(
-        <Stack.Navigator>
-            <Stack.Screen name= 'Login' component={Login}/>
-            <Stack.Screen name = 'CheckIn' component={CheckIn}/>
-            <Stack.Screen name = 'Game' component={Game}/>
-        </Stack.Navigator>
-    )
+function MyStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Game" component={Game} />
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="CheckIn" component={CheckIn} />
+    </Stack.Navigator>
+  );
 }
 
-export default function StackNavigation(){
-    return(
-        <NavigationContainer>
-            <MyStack/>
-        </NavigationContainer>
-    )
+export default function StackNavigation() {
+  return (
+    <NavigationContainer>
+      <MyStack />
+    </NavigationContainer>
+  );
 }
